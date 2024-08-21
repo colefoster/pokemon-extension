@@ -8,6 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@pkmn/data':
+        specifier: ^0.9.11
+        version: 0.9.11
+      '@pkmn/dex':
+        specifier: ^0.9.11
+        version: 0.9.11
+      '@pkmn/img':
+        specifier: ^0.2.31
+        version: 0.2.31
+      '@pkmn/smogon':
+        specifier: ^0.5.10
+        version: 0.5.10
+      '@pkmn/types':
+        specifier: ^4.0.0
+        version: 4.0.0
+      '@pkmn/view':
+        specifier: ^0.6.25
+        version: 0.6.25
       plasmo:
         specifier: 0.88.0
         version: 0.88.0(@swc/core@1.7.3(@swc/helpers@0.5.12))(@swc/helpers@0.5.12)(lodash@4.17.21)(postcss@8.4.40)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -17,6 +35,9 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
+      smogon:
+        specifier: ^3.1.8
+        version: 3.1.8
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.1.1
@@ -794,6 +815,32 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@pkmn/data@0.9.11':
+    resolution: {integrity: sha512-RU/bzFdB9mIZUsA29EP9qPdX7dW1A1i+KJeZteyJidEz0ZTH3fbT+3lDyeT4hAU2qQOYj+zHhbyKqcNFh3zRvQ==}
+
+  '@pkmn/dex-types@0.9.11':
+    resolution: {integrity: sha512-iiXxGmkIv5Pv0FI5p0XXL/MhIZFI9O1DSltDnGGqQva4KpFufvvZZeFjM+gB9zymU+bN2T5J9l1xCd6DIsveJg==}
+
+  '@pkmn/dex@0.9.11':
+    resolution: {integrity: sha512-CDYoXIs+kj03H4MMg4qWRreQ+dyTA32XpI4T9ZmIusnlnqAqinbJ5gjZ9nnrvp67/Xr2zyBJj0Qrl+dWlYulKA==}
+
+  '@pkmn/img@0.2.31':
+    resolution: {integrity: sha512-au6l8UJYALQt+dHXgQbD+gJ4ZVi1u1WbPEPl/gSxBPqJZkIKcha6rdKsxKfNQMgUlfsuSOqVuFw1XMKrqF5nYA==}
+
+  '@pkmn/protocol@0.6.25':
+    resolution: {integrity: sha512-FtrXKiYcGqx4X5oy7WGCEGAxuZur8db7p0uxj8K8FmguAkMrEsT+FaQTrVM0M0+JGw3WhnB5nEZG3vM+7cyWhQ==}
+    hasBin: true
+
+  '@pkmn/smogon@0.5.10':
+    resolution: {integrity: sha512-TYuklAJzDjiPAf+1mik/Udy2YDsew6zoL1W31w2SjvxJ1CoX1f732WY6KE0GtSz+rGXbX2bgep88CC29Gdqfwg==}
+
+  '@pkmn/types@4.0.0':
+    resolution: {integrity: sha512-gR2s/pxJYEegek1TtsYCQupNR3d5hMlcJFsiD+2LyfKr4tc+gETTql47tWLX5mFSbPcbXh7f4+7txlMIDoZx/g==}
+
+  '@pkmn/view@0.6.25':
+    resolution: {integrity: sha512-sd9huGDBhNohjaI6WlOo2nb79+v/Wxwap7CAzNieDy6lJwJ3xhdq2iWnRcZJF8qIwHUw6Xq3FSbeEUEzffiuiw==}
+    hasBin: true
 
   '@plasmohq/consolidate@0.17.0':
     resolution: {integrity: sha512-Na8imBnvzYPtzkK+9Uv9hPZ/oJti/0jgiQWD222SHxHw2QCVuR4KzslxXCy/rS8gGluSiTs1BGVvc3d2O6aJCA==}
@@ -2708,6 +2755,9 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
+  smogon@3.1.8:
+    resolution: {integrity: sha512-t/KyTn1Ez4jQzGla2woQnqpM/zRMnvsk0pHUTqtPMyGc7RDzPfIWbxeHv9kZzZ4HVU1aM/VSJQsLyRPvz9j5bQ==}
+
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
@@ -3997,6 +4047,35 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@pkmn/data@0.9.11':
+    dependencies:
+      '@pkmn/dex-types': 0.9.11
+
+  '@pkmn/dex-types@0.9.11':
+    dependencies:
+      '@pkmn/types': 4.0.0
+
+  '@pkmn/dex@0.9.11':
+    dependencies:
+      '@pkmn/dex-types': 0.9.11
+
+  '@pkmn/img@0.2.31': {}
+
+  '@pkmn/protocol@0.6.25':
+    dependencies:
+      '@pkmn/types': 4.0.0
+
+  '@pkmn/smogon@0.5.10':
+    dependencies:
+      '@pkmn/data': 0.9.11
+
+  '@pkmn/types@4.0.0': {}
+
+  '@pkmn/view@0.6.25':
+    dependencies:
+      '@pkmn/protocol': 0.6.25
+      '@pkmn/types': 4.0.0
 
   '@plasmohq/consolidate@0.17.0(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -6013,6 +6092,8 @@ snapshots:
       is-arrayish: 0.3.2
 
   slash@3.0.0: {}
+
+  smogon@3.1.8: {}
 
   source-map-js@1.2.0: {}
 
