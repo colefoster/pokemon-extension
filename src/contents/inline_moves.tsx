@@ -1,13 +1,6 @@
 import type { PlasmoCSConfig, PlasmoGetInlineAnchor, PlasmoGetInlineAnchorList } from "plasmo"
 
-import styleText from "data-text:./inline.css"
-import type { PlasmoGetStyle } from "plasmo"
- 
-export const getStyle: PlasmoGetStyle = () => {
-  const style = document.createElement("style")
-  style.textContent = styleText
-  return style
-}
+
 function Button() {
 
   const battle = (window as any).app.curRoom.battle;

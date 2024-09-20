@@ -1,8 +1,11 @@
 import type { PlasmoCSConfig, PlasmoGetInlineAnchor, PlasmoGetInlineAnchorList, PlasmoGetOverlayAnchor, PlasmoGetOverlayAnchorList } from "plasmo"
 
+import { addLog } from "./log_manager"
+
 
 function Button() {
 
+  
   return (
     <div style={{
       padding: 0,
@@ -28,6 +31,5 @@ export const getOverlayAnchorList: PlasmoGetOverlayAnchorList = async () => {
 
 
 }
-
 
 export default Button
